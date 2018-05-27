@@ -1,0 +1,14 @@
+#include "lib/hello-name.h"
+#include "main/hello-get-name.h"
+#include <iostream>
+#include <string>
+
+int main(int argc, char** argv) {
+  std::string name = "robots";
+  if (argc > 1) {
+    name = argv[1];
+  }
+  std::cout << get_name(name) << std::endl;
+  print_myname();
+  return 0;
+}
